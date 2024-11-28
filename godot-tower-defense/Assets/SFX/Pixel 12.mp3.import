@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pixel 12.mp3-46225eca768afa7e186f0d2e82c9e7f3.mp3str"
+
+[deps]
+
+source_file="res://Assets/SFX/Pixel 12.mp3"
+dest_files=[ "res://.import/Pixel 12.mp3-46225eca768afa7e186f0d2e82c9e7f3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

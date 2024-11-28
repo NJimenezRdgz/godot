@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lightning-tiger-god-loop-50249.mp3-61d0b0fe0ddd85371ff1f3151a90c0f1.mp3str"
+
+[deps]
+
+source_file="res://Assets/SFX/lightning-tiger-god-loop-50249.mp3"
+dest_files=[ "res://.import/lightning-tiger-god-loop-50249.mp3-61d0b0fe0ddd85371ff1f3151a90c0f1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

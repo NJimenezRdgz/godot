@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lightning magic hits objects-yoyosound.com.mp3-9f6b16eecfc39ed234d9965452d9a2ba.mp3str"
+
+[deps]
+
+source_file="res://Assets/SFX/Lightning magic hits objects-yoyosound.com.mp3"
+dest_files=[ "res://.import/Lightning magic hits objects-yoyosound.com.mp3-9f6b16eecfc39ed234d9965452d9a2ba.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,164 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Assets/Towers/mage_tower/Lvl2/Tower/1731312876308.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Towers/mage_tower/Lvl2/mage_lvl_2.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Towers/mage_tower_lvl_2.gd" type="Script" id=3]
+[ext_resource path="res://Assets/SFX/Lightning magic hits objects-yoyosound.com.mp3" type="AudioStream" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Attack_down"
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Unit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45, 0.65, 0.85 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 4, 3, 5 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Attack_side"
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Unit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45, 0.65, 0.85 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 10, 11, 12, 13, 14, 15 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Attack_up"
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Unit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45, 0.65, 0.85 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 20, 21, 22, 23, 24, 25 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Idle_down"
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Unit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 9 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Idle_side"
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Unit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 16, 17, 18, 19 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "Idle_up"
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Unit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 26, 28, 27, 29 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Animation"
+loop = true
+step = 0.016
+tracks/0/type = "value"
+tracks/0/path = NodePath("Base:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.16, 0.32, 0.48, 0.672, 0.848 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5 ]
+}
+
+[node name="mage_tower_lvl_2" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Base" type="Sprite" parent="."]
+position = Vector2( 1.2571, 19.3854 )
+scale = Vector2( 0.33, 0.33 )
+texture = ExtResource( 1 )
+hframes = 4
+vframes = 2
+
+[node name="Unit" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+hframes = 10
+vframes = 4
+frame = 3
+
+[node name="Side" type="Position2D" parent="Unit"]
+position = Vector2( -15.4223, -7.47925 )
+
+[node name="Up" type="Position2D" parent="Unit"]
+position = Vector2( 11.0385, -15.5455 )
+
+[node name="Down" type="Position2D" parent="Unit"]
+position = Vector2( -9.83728, 15.4323 )
+
+[node name="UnitAnimation" type="AnimationPlayer" parent="."]
+anims/Attack_down = SubResource( 1 )
+anims/Attack_side = SubResource( 2 )
+anims/Attack_up = SubResource( 3 )
+anims/Idle_down = SubResource( 4 )
+anims/Idle_side = SubResource( 5 )
+anims/Idle_up = SubResource( 6 )
+
+[node name="TowerAnimation" type="AnimationPlayer" parent="."]
+anims/Animation = SubResource( 7 )
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/arrow-002-41178.mp3-ae5261d063bddf44904b282df5b2ab02.mp3str"
+
+[deps]
+
+source_file="res://Assets/SFX/arrow-002-41178.mp3"
+dest_files=[ "res://.import/arrow-002-41178.mp3-ae5261d063bddf44904b282df5b2ab02.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

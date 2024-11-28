@@ -1,0 +1,95 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Fonts/MainMenu.tres" type="DynamicFont" id=1]
+[ext_resource path="res://UI/Art/beige_bordered_scroll_pressed.png" type="Texture" id=2]
+[ext_resource path="res://UI/Art/beige_bordered_scroll.png" type="Texture" id=3]
+[ext_resource path="res://UI/Art/BlurBackground.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/SupportScenes/Win_screen.gd" type="Script" id=5]
+
+[node name="Win_screen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -312.0
+margin_top = 200.0
+margin_right = 316.0
+margin_bottom = 135.0
+rect_min_size = Vector2( 200, 160 )
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WinLabel" type="Label" parent="TextureRect2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -185.5
+margin_top = -31.0
+margin_right = 185.5
+margin_bottom = 31.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.823529, 0.0666667, 0.0666667, 1 )
+custom_colors/font_outline_modulate = Color( 0.294118, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_shadow = Color( 0.454902, 0.0784314, 0.0784314, 1 )
+text = "Congratulations"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HB" type="HBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -135.0
+rect_min_size = Vector2( 500, 0 )
+size_flags_horizontal = 4
+custom_constants/separation = -10
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="TextureButton" parent="HB"]
+margin_left = 454.0
+margin_right = 825.0
+margin_bottom = 135.0
+rect_min_size = Vector2( 350, 75 )
+size_flags_horizontal = 4
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="HB/Exit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.823529, 0.0666667, 0.0666667, 1 )
+custom_colors/font_outline_modulate = Color( 0.294118, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_shadow = Color( 0.454902, 0.0784314, 0.0784314, 1 )
+text = "Exit"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="HB/Exit" to="." method="_on_Exit_pressed"]

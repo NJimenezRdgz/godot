@@ -1,0 +1,149 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Fonts/MainMenu.tres" type="DynamicFont" id=1]
+[ext_resource path="res://UI/Art/BlurBackground.png" type="Texture" id=2]
+[ext_resource path="res://UI/Art/beige_bordered_scroll.png" type="Texture" id=3]
+[ext_resource path="res://UI/Art/beige_bordered_scroll_pressed.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/UIScenes/MapSelectScene.gd" type="Script" id=5]
+
+[node name="MapSelectScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.5636
+margin_right = 3.5636
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="M" type="MarginContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -641.5
+margin_top = -117.5
+margin_right = 641.5
+margin_bottom = 117.5
+custom_constants/margin_right = 50
+custom_constants/margin_top = 50
+custom_constants/margin_left = 50
+custom_constants/margin_bottom = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HB" type="HBoxContainer" parent="M"]
+margin_left = 95.0
+margin_top = 50.0
+margin_right = 1188.0
+margin_bottom = 185.0
+rect_min_size = Vector2( 500, 0 )
+size_flags_horizontal = 4
+custom_constants/separation = -10
+alignment = 1
+
+[node name="Map_1" type="TextureButton" parent="M/HB"]
+margin_right = 371.0
+margin_bottom = 135.0
+rect_min_size = Vector2( 350, 75 )
+size_flags_horizontal = 4
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="M/HB/Map_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.823529, 0.0666667, 0.0666667, 1 )
+custom_colors/font_outline_modulate = Color( 0.294118, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_shadow = Color( 0.454902, 0.0784314, 0.0784314, 1 )
+text = "Map 1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Map_2" type="TextureButton" parent="M/HB"]
+margin_left = 361.0
+margin_right = 732.0
+margin_bottom = 135.0
+rect_min_size = Vector2( 350, 75 )
+size_flags_horizontal = 4
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="M/HB/Map_2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.823529, 0.0666667, 0.0666667, 1 )
+custom_colors/font_outline_modulate = Color( 0.294118, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_shadow = Color( 0.454902, 0.0784314, 0.0784314, 1 )
+text = "Map 2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Map_3" type="TextureButton" parent="M/HB"]
+margin_left = 722.0
+margin_right = 1093.0
+margin_bottom = 135.0
+rect_min_size = Vector2( 350, 75 )
+size_flags_horizontal = 4
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="M/HB/Map_3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.823529, 0.0666667, 0.0666667, 1 )
+custom_colors/font_outline_modulate = Color( 0.294118, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_shadow = Color( 0.454902, 0.0784314, 0.0784314, 1 )
+text = "MAp 3"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="TextureButton" parent="."]
+anchor_right = 0.273
+anchor_bottom = 0.104
+margin_left = 918.0
+margin_top = 582.983
+margin_right = 939.56
+margin_bottom = 643.103
+rect_min_size = Vector2( 250, 50 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Back"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.823529, 0.0666667, 0.0666667, 1 )
+custom_colors/font_outline_modulate = Color( 0.294118, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_shadow = Color( 0.454902, 0.0784314, 0.0784314, 1 )
+text = "Back"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
