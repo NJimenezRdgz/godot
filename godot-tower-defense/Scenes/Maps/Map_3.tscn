@@ -1652,11 +1652,11 @@ position = Vector2( 311.067, 63.5838 )
 texture = ExtResource( 14 )
 
 [node name="15" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 240.432, 100.583 )
+position = Vector2( 795.725, 101.918 )
 texture = ExtResource( 13 )
 
 [node name="16" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 386.748, 127.492 )
+position = Vector2( 641.702, 134.166 )
 texture = ExtResource( 17 )
 
 [node name="17" type="Sprite" parent="TowerExclusion"]
@@ -1684,7 +1684,7 @@ position = Vector2( 63.8436, 477.305 )
 texture = ExtResource( 25 )
 
 [node name="9" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 230.341, 514.304 )
+position = Vector2( 210.318, 523.648 )
 texture = ExtResource( 18 )
 
 [node name="8" type="Sprite" parent="TowerExclusion"]
@@ -1692,7 +1692,7 @@ position = Vector2( 383.384, 526.077 )
 texture = ExtResource( 16 )
 
 [node name="7" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 635.653, 534.486 )
+position = Vector2( 657.011, 498.445 )
 texture = ExtResource( 26 )
 
 [node name="6" type="Sprite" parent="TowerExclusion"]
@@ -1720,7 +1720,7 @@ position = Vector2( 858.475, 554.634 )
 texture = ExtResource( 35 )
 
 [node name="24" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 982.432, 114.956 )
+position = Vector2( 313.677, 117.626 )
 texture = ExtResource( 22 )
 
 [node name="25" type="Sprite" parent="TowerExclusion"]
@@ -1728,11 +1728,11 @@ position = Vector2( 1030.98, 420.116 )
 texture = ExtResource( 9 )
 
 [node name="2" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 1148.77, 140.384 )
+position = Vector2( 626.848, 267.194 )
 texture = ExtResource( 8 )
 
 [node name="1" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 959.124, 549.336 )
+position = Vector2( 598.717, 549.336 )
 texture = ExtResource( 12 )
 
 [node name="26" type="Sprite" parent="TowerExclusion"]
@@ -1756,15 +1756,15 @@ position = Vector2( 596.787, 491.066 )
 texture = ExtResource( 33 )
 
 [node name="31" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 1167.89, 186.584 )
+position = Vector2( 634.523, 311.195 )
 texture = ExtResource( 34 )
 
 [node name="32" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 1060.83, 83.1726 )
+position = Vector2( 208.881, 119.091 )
 texture = ExtResource( 28 )
 
 [node name="33" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 1096.85, 84.2321 )
+position = Vector2( 244.901, 120.151 )
 texture = ExtResource( 23 )
 
 [node name="Tree1" type="Sprite" parent="TowerExclusion"]
@@ -1772,7 +1772,7 @@ position = Vector2( 1198.17, 72.3246 )
 texture = ExtResource( 40 )
 
 [node name="Tree2" type="Sprite" parent="TowerExclusion"]
-position = Vector2( 1031.53, 95.5992 )
+position = Vector2( 179.581, 131.518 )
 texture = ExtResource( 10 )
 
 [node name="TowerExclusion2" type="TileMap" parent="."]

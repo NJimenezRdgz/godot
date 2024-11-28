@@ -3,7 +3,7 @@ extends Node2D
 signal game_finished(result)
 signal wave_finished 
 var map_node
-var settings_menu_scene = preload("res://Scenes/UIScenes/Settings_menu.tscn")
+var pause_menu_scene = preload("res://Scenes/UIScenes/Pause_Menu.tscn")
 var map_name = "Map_2"
 var build_mode = false
 var build_valid = false
@@ -49,20 +49,20 @@ func _unhandled_input(event):
 		verify_and_build()
 		cancel_build_mode()
 	if event.is_action_pressed("ui_cancel") and not build_mode:
-		toggle_settings_menu()
+		toggle_pause_menu()
 		
-func toggle_settings_menu():
-	var existing_menu = get_node_or_null("SettingsMenu")
+func toggle_pause_menu():
+	var existing_menu = get_node_or_null("Pause_Menu")
 	if existing_menu:
 		# Si existe, lo eliminamos y reanudamos el juego
 		existing_menu.queue_free()
 		get_tree().paused = false
 	else:
 		# Si no existe, lo instanciamos y pausamos el juego
-		var settings_menu = settings_menu_scene.instance()
-		add_child(settings_menu)
-		settings_menu.name = "Settings_Menu"
-		settings_menu.rect_position = get_viewport().size / 2 - settings_menu.rect_size / 2  # Centrar en pantalla
+		var pause_menu = pause_menu_scene.instance()
+		add_child(pause_menu)
+		pause_menu.name = "Pause_Menu"
+		pause_menu.rect_position = get_viewport().size / 2 - pause_menu.rect_size / 2  # Centrar en pantalla
 		get_tree().paused = true
 ##
 ## Wave Func
@@ -219,4 +219,6 @@ func get_node_at_click(mouse_pos: Vector2) -> Object:
 			return tower  # Devuelve la torre encontrada en este tile
 	
 	return null  # Si no hay torre, devolver null
+func _on_UpgradeButton_pressed():
+	pass # Replace with function body.
 

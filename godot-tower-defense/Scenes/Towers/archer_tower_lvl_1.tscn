@@ -183,7 +183,6 @@ position = Vector2( 5.66327, 18.1953 )
 shape = SubResource( 8 )
 
 [node name="AreaClickTorre" type="Area2D" parent="."]
-visible = false
 
 [node name="ClickTorre" type="CollisionShape2D" parent="AreaClickTorre"]
 position = Vector2( 6.18795, 19.0986 )
@@ -191,10 +190,10 @@ shape = SubResource( 9 )
 
 [node name="TowerMenu" type="Control" parent="."]
 visible = false
-margin_left = 20.0
-margin_top = -30.0
-margin_right = 78.0
-margin_bottom = 10.0
+margin_left = 41.8271
+margin_top = -29.4454
+margin_right = 99.8271
+margin_bottom = 9.55455
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -211,20 +210,22 @@ __meta__ = {
 }
 
 [node name="UpgradeButton" type="Button" parent="TowerMenu/VBoxContainer"]
-margin_left = 29.0
-margin_right = 76.0
+margin_left = 9.0
+margin_right = 96.0
 margin_bottom = 26.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 11 )
-text = "Upgrade"
+text = "Upgrade cost: 250"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = 11.642
 
 [connection signal="body_entered" from="Range" to="." method="_on_Range_body_entered"]
 [connection signal="body_exited" from="Range" to="." method="_on_Range_body_exited"]
 [connection signal="input_event" from="AreaClickTorre" to="." method="_on_AreaClickTorre_input_event"]
+[connection signal="pressed" from="TowerMenu/VBoxContainer/UpgradeButton" to="." method="_on_UpgradeButton_pressed"]

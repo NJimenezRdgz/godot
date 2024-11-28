@@ -2062,10 +2062,6 @@ position = Vector2( -310.994, 155.505 )
 scale = Vector2( 0.73, 0.73 )
 texture = ExtResource( 25 )
 
-[node name="7" type="Sprite" parent="TowerExclusion/60/5/3/23/4"]
-position = Vector2( 240.671, -67.6207 )
-texture = ExtResource( 9 )
-
 [node name="9" type="Sprite" parent="TowerExclusion/60/5/3/23/4"]
 position = Vector2( 638.096, 79.65 )
 scale = Vector2( 1.36986, 1.36986 )
@@ -2253,89 +2249,89 @@ position = Vector2( -316.208, -66.1016 )
 scale = Vector2( 1.36986, 1.36986 )
 texture = ExtResource( 44 )
 
-[node name="6" type="Sprite" parent="TowerExclusion/60/5/3/23"]
-position = Vector2( -137.389, 113.649 )
-scale = Vector2( 0.73, 0.73 )
+[node name="6" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5"]
+position = Vector2( 404.438, 6.39816 )
+scale = Vector2( 0.730002, 0.730002 )
 texture = ExtResource( 7 )
 
-[node name="flower3" type="Sprite" parent="TowerExclusion/60/5/3/23/6"]
+[node name="flower3" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6"]
 position = Vector2( -568.884, 143.012 )
 scale = Vector2( 1.36986, 1.36986 )
 texture = ExtResource( 28 )
 
-[node name="10" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="10" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 175.247, 45.8516 )
 texture = ExtResource( 63 )
 
-[node name="1" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="1" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 452.743, -230.803 )
 texture = ExtResource( 64 )
 
-[node name="2" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="2" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 494.788, -171.941 )
 texture = ExtResource( 28 )
 
-[node name="3" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="3" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 567.946, -177.827 )
 texture = ExtResource( 27 )
 
-[node name="5" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="5" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 500.674, -92.0555 )
 texture = ExtResource( 65 )
 
-[node name="6" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="6" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 699.966, -168.577 )
 texture = ExtResource( 66 )
 
-[node name="4" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="4" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 645.308, -161.85 )
 texture = ExtResource( 68 )
 
-[node name="7" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="7" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 625.968, -254.348 )
 texture = ExtResource( 64 )
 
-[node name="8" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="8" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 674.74, -290.507 )
 texture = ExtResource( 28 )
 
-[node name="9" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="9" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 456.947, -59.2605 )
 texture = ExtResource( 28 )
 
-[node name="11" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="11" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 852.169, -172.782 )
 texture = ExtResource( 65 )
 
-[node name="12" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="12" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 826.942, -60.1014 )
 texture = ExtResource( 66 )
 
-[node name="13" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="13" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 880.759, -55.8969 )
 texture = ExtResource( 68 )
 
-[node name="14" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="14" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 897.577, -4.60223 )
 texture = ExtResource( 28 )
 
-[node name="15" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="15" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 361.926, -340.12 )
 texture = ExtResource( 28 )
 
-[node name="16" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="16" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 12.9542, -454.482 )
 texture = ExtResource( 28 )
 
-[node name="17" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="17" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 799.192, -518.39 )
 texture = ExtResource( 28 )
 
-[node name="18" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="18" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( 410.698, -520.072 )
 texture = ExtResource( 64 )
 
-[node name="19" type="Sprite" parent="TowerExclusion/60/5/3/23/6/flower3"]
+[node name="19" type="Sprite" parent="TowerExclusion/60/5/3/23/4/Tree5/6/flower3"]
 position = Vector2( -198.952, -142.509 )
 texture = ExtResource( 28 )
 
@@ -2348,6 +2344,11 @@ texture = ExtResource( 12 )
 position = Vector2( -296.642, 235.795 )
 scale = Vector2( 0.73, 0.73 )
 texture = ExtResource( 8 )
+
+[node name="7" type="Sprite" parent="TowerExclusion"]
+position = Vector2( 709.21, 437.295 )
+scale = Vector2( 0.73, 0.73 )
+texture = ExtResource( 9 )
 
 [node name="TowerExclusion2" type="TileMap" parent="."]
 tile_set = SubResource( 3 )
@@ -2362,4 +2363,5 @@ curve = SubResource( 4 )
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 69 )
+volume_db = -17.87
 autoplay = true

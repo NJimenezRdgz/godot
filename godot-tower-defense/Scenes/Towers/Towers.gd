@@ -10,6 +10,7 @@ var type
 var flip 
 var built = false
 var ready = true
+var total_coins = 0
 
 onready var FirePositions = {
 	"up": $Unit/Up,
@@ -19,9 +20,9 @@ onready var FirePositions = {
 }
 
 func _ready() -> void:
+	print("Self:")
+	print(self)
 	var tower_menu = get_node("TowerMenu")
-	#var upgrade_button = tower_menu.get_node("VBoxContainer/UpgradeButton")
-	#upgrade_button.connect("pressed", self, "_on_upgrade_pressed")
 	if built:
 		self.get_node("Range/CollisionShape2D").get_shape().radius = 0.5 * GameData.tower_data[type]["range"]
 
@@ -180,6 +181,7 @@ func _on_enemy_died(enemy: Node2D) -> void:
 func _on_AreaClickTorre_input_event(viewport, event, shape_idx):
 	var tower_menu = get_node("TowerMenu")
 	if event is InputEventMouseButton:
+		print("clic en torre")
 		if event.button_index == BUTTON_LEFT and event.pressed:
 			if tower_menu:
 				tower_menu.visible = !tower_menu.visible 
@@ -190,7 +192,8 @@ func hide_menu():
 	var tower_menu = get_node("TowerMenu")
 	if tower_menu:
 		tower_menu.visible = false  # Oculta el menú
-func _on_upgrade_pressed():
+func _on_UpgradeButton_pressed():
+	print("upgrade")
 	if built:
 		if can_upgrade():
 			apply_upgrade()
@@ -209,31 +212,12 @@ func can_upgrade() -> bool:
 	if tower_data == null:
 		return false  # Si no existe la torre, no puede mejorarse
 
-	var current_upgrade_cost = tower_data.get("upgrade_cost", 0)  # Obtener el costo de mejora de la torre
-	
-	# Obtener la escena activa
-	var game_scene = get_tree().root.get_child(0)  # Esto obtiene el primer hijo de la raíz (generalmente la escena principal)
-
-	if game_scene == null:
-		print("Error: No se pudo acceder a la GameScene.")
-		return false  # Si no podemos acceder a GameScene, no hacemos nada
-	
-	var total_coins = game_scene.total_coins  # Obtener el dinero del jugador desde GameScene
-
+	var current_upgrade_cost = int(tower_data.get("upgrade_cost", 0))
+	print("Dentro de can upgrade: coins: ")
 	return total_coins >= current_upgrade_cost  # Verificar si el jugador tiene suficiente dinero
-
+func get_coins(coins):
+	total_coins = coins
 func apply_upgrade():
-	var game_scene = get_tree().current_scene  # Accede a la escena actual (GameScene)
-	
-	if game_scene != null:
-		var total_coins = game_scene.total_coins  # Accede a total_coins de GameScene
-		var upgrade_cost = GameData.tower_data[type].get("upgrade_cost", 0)
-
-		if total_coins >= upgrade_cost:
-			game_scene.total_coins -= upgrade_cost  # Resta el costo de la mejora
-			game_scene.upgrade_tower()  # Realiza la mejora de la torre
-		else:
-			print("No tienes suficiente dinero para mejorar la torre.")
-	else:
-		print("Error: No se pudo acceder a GameScene.")
+	print("Self:")
+	print(self)
 

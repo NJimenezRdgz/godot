@@ -3,7 +3,7 @@ onready var ResOptButton = $HBoxContainer/Column2/ResolutionButton
 signal CloseSettingsMenu
 
 func _on_Exit_pressed():
-	emit_signal("CloseSettingsMenu")
+	queue_free()
 
 
 func _on_MasterVolumeVolumeButton_value_changed(value):
